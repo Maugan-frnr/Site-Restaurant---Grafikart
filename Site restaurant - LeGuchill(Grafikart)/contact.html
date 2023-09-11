@@ -2,55 +2,57 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Le restaurant ......">
-    <title>Restaurant - LeGuchill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Restaurant LeGuchill</title>
+    <meta name="description" content="Restaurant Gastronomique à de pas de là tour Eiffel">
 </head>
-
 <body>
+    <header>
+        <h1>Nous contacter</h1>
+        <nav>
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="menu.html" title="Voir le Menu">Menu</a>
+            <a href="contact.html" title="Nous contacter">Contact</a>
+        </nav>
+        <img src="Images du site/Bannière restaurant LeGuchill accueil.jpg" alt="Bannière Restaurant LeGuchill" width="1260" height="355">
+        <!--Pour une raison que j'ignore, google m'interdit l'accès direct à Google Map. J'ai donc insérer une image à la place en attendant de trouver la solution à ce problème!-->
+    </header>
+    <section>
+        <h2> Où nous trouver</h2>
+        <p>
+            Champ de Mars, 5 Av. Anatole France, <br>
+            75007 Paris
+        </p>
+        <img src="Images du site/PlanMap.png">
 
-    <nav>
-        <ul>
-            <li> <a href="index.html">Accueil</a></li>
-            <li> <a href="menu.html">Menu</a></li>
-        </ul>
-    </nav>
-    <h1>Nous contacter</h1>
-    <form action="contact.html">
+            <h2> Nous envoyer un email </h2>
+            <form action="contact.html"></form>
         <div>
-            <label for="email"> Votre adresse mail</label>
-            <input type="email" name=email id="email" placeholder="contact@exemple.fr" required>
+            <label for="email"> Votre adresse mail </label>
+            <input type="email" required id="email" name="email" placeholder="exemple@email.fr"> 
         </div>
         <hr>
         <div>
-            <label for="Nom"> Votre nom</label>
-            <input type="" name="Nom" id="Nom" required>
+            <label for="first name"> Votre nom </label>
+            <input type="text" required id="firstname" name="firstname">
         </div>
         <hr>
         <div>
-            <label for="Prenom">Votre prénom</label>
-            <input type="text" name="Prenom" id="Prenom" required>
+            <label for="lastname"> Votre Prénom </label>
+            <input type="text" required id="lastname" name="lastname">
         </div>
         <hr>
         <div>
-            <label>Sexe</label>
-            <div>
-                <input type="radio" name="Sexe" id="Masculin" checked>
-                <label for="Masculin">Masculin</label>
-                <input type="radio" name="Sexe" id="Feminin">
-                <label for="Feminin">Féminin</label>
-            </div>
+            <label for="message"> Votre message </label>
+            <textarea required id="message" name="message"></textarea>
         </div>
         <hr>
-            <div>
-                <label><input type="checkbox" name="cgu" required> J'accepte les conditions d'utilisations</label>
-            </div>
-            <hr>
-            <input type="submit">
-            <input type="reset" name="Annuler">
-            
-    </form>
 
-
-
-
+     
+    </section>
+    
+    <footer>
+        <address> Champ de Mars, 5 Av. Anatole France, 75007 Paris </address>
+    </footer>
 </body>
+</html>
